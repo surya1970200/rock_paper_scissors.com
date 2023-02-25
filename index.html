@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rock Paper Scissors App</title>
+        <style>
+            body{
+            background-image: url(pic/rock\ papper\ sicssors.gif);
+            background-size: cover;
+            background-position: center;
+            margin: 0px;
+            }
+            header{
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                padding: 0px;
+                margin: 0px;
+                width: 810px;
+                height: 99px; 
+                padding-left: 450px;
+                margin-bottom: 10px;
+                
+            }
+             
+            .h{
+                width: 400px;
+                height: 80px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                font-size: 35px;
+                margin: 0px;
+                padding-top: 20px;
+                padding-left: 20px;
+                color: white;   
+            }
+            .score{
+                height: 40px;
+                color: white;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                margin-left: 700px;
+                padding-left: 180px;
+                font-size: 20px;
+                margin-bottom: 30px;
+            }
+            .s1{
+                width: 120px;
+                padding-left: 60px;
+            }
+            .s2{
+                width: 120px;
+                margin-right: 0px;
+            }
+            .s3{
+                width: 30px;
+            }
+            .rock_paper_scissors{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            padding-left: 240px;
+            }
+            .rock{
+            background-image: url(pic/rock1.gif);
+            background-size: cover;
+            background-position: center;
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+            border: none;
+            border-radius: 10px;
+            }
+            .rock:active{
+                border-color: blueviolet;
+                border-style: solid;
+                border-width: 4px;
+            }
+            .paper{
+            background-image: url(pic/paper.gif);
+            background-size: cover;
+            background-position: center;
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+            border: none;
+            border-radius: 10px;
+            }
+            .paper:active{
+                border-color: blueviolet;
+                border-style: solid;
+                border-width: 4px;
+            }
+            .scissors{
+            background-image: url(pic/scissors.gif);
+            background-size: cover;
+            background-position: center;
+            width: 100px;
+            height: 100px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            }   
+            .scissors:active{
+                border-color: blueviolet;
+                border-style: solid;
+                border-width: 4px;
+            }
+            .ai{
+                margin-top: 0px;
+            } 
+            .vs{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 40px;
+                font-weight: bolder;
+                color: rgb(226, 90, 6);
+                margin-left: 618px;
+                margin-top: 20px;
+
+            }
+            .machine{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 30px;
+                font-weight: bolder;
+                margin-left: 480px;
+                margin-top: -40px;
+            }
+            .machinescore{
+                margin-left: -280px;
+            }
+            .wl{
+                color: rgb(210, 16, 16);
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20px;
+                font-weight: bolder;
+                margin: 0px;
+                margin-left: 600px;
+                margin-bottom: 10px;
+            }
+            .trydiv{
+                height: 40px;
+                margin-top: 0px;
+                margin-left: 600px;
+            }
+            .trydiv button{
+                width: 80px;
+                height: 30px;
+                border-radius: 20px;
+            }
+            .trydiv button:active{
+                border-color: blueviolet;
+                border-style: solid;
+            }
+            footer{
+                position: relative;
+                bottom: 0px; 
+                right: 0px;
+                left: 0px;
+                color: white;
+                background-color: rgb(113, 53, 155);
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            footer p{
+                 
+                display: inline-block;
+                margin-left: 570px;
+            }
+            footer a{
+                text-decoration: none;
+                font-size: 20px;
+                color: blue;
+                font-weight:bolder;
+            }
+                    
+        </style>
+    </head>
+    
+     <body  >
+
+        <header>
+            <p class="h">Rock paper scissors</p>
+        </header>
+        <div class="b"> 
+            <div class="score">
+                <p class="s1">xxx</p>
+                <p class="s2">your score </p>
+                <p  class="s3"> : 0</p>
+            </div>
+
+
+            <div class="rock_paper_scissors"> 
+                <button class="rock" value="rock" >rock</button>
+                <button class="paper" value="paper" >paper</button>
+                <button class="scissors" value="Scissors">scissors</button>
+            </div> 
+            <div class="ai">
+                <p class="vs">vs</p>
+                <div class="machine">
+                   <p>🤖:</p><p class="machinescore">-</p>
+                </div>
+                <p class="wl">start the game</p>
+            </div>
+
+
+            <div class="trydiv">  
+                <button class="tryagain" >try again</button>
+            </div> 
+        </div>
+        <footer>
+            <p >created by:</p>
+            <a href="https://surya1970200.github.io/my_profolio.com/" target="_blank">Surya S</a>
+        </footer>
+     </body>
+     <script src="rock_paper_scissors.js"></script>
+    </html>
